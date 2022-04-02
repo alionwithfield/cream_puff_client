@@ -2,7 +2,7 @@
   "name": "puff-cream-client",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
@@ -13,24 +13,56 @@
   "dependencies": {
     "ag-grid-community": "^27.1.0",
     "ag-grid-vue3": "^27.1.0",
-    "axios": "^0.21.1",
+    "@heroicons/vue": "^1.0.6",
     "pinia": "^2.0.11",
     "vue": "^3.2.31",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
-   "@rushstack/eslint-patch": "^1.1.0",
+    "@babel/core": "^7.17.8",
+    "@headlessui/vue": "^1.5.0",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.2",
+    "@types/tailwindcss": "^3.0.10",
+    "@vitejs/plugin-legacy": "^1.8.0",
     "@vitejs/plugin-vue": "^2.2.2",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.0-rc.18",
+    "autoprefixer": "^10.4.4",
+    "babel-loader": "^8.2.4",
+    "cross-env": "^7.0.3",
     "cypress": "^9.5.0",
     "eslint": "^8.5.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-vue": "^8.2.0",
     "jsdom": "^19.0.0",
+    "postcss": "^8.4.12",
+    "postcss-import": "^14.1.0",
     "prettier": "^2.5.1",
     "start-server-and-test": "^1.14.0",
+    "tailwindcss": "^3.0.23",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3",
     "vite": "^2.8.4",
-    "vitest": "^0.5.0"
+    "vitest": "^0.5.0",
+    "vue-loader": "^16.8.3",
+    "vue-tsc": "^0.29.8"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 edge version",
+      "last 1 ie version"
+    ]
   }
 }

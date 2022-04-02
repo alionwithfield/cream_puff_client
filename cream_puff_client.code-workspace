@@ -5,6 +5,33 @@
     }
   ],
   "settings": {
-    "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.8/envs/binance/bin/python"
+    "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.8/envs/binance/bin/python",
+    "prettier.arrowParens": "avoid",
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "editor.formatOnSave": true,
+    "eslint.codeActionsOnSave.mode": "problems",
+    "eslint.run": "onSave",
+    "eslint.codeActionsOnSave.rules": [],
+    "prettier.enableDebugLogs": true,
+    "prettier.requireConfig": true,
+    "prettier.useEditorConfig": false,
+    "prettier.vueIndentScriptAndStyle": true,
+    "prettier.configPath": ".prettierrc.js",
+    "prettier.bracketSpacing": false
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+    
+      {
+        "name": "Python: Current File",
+        "type": "python",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal",
+        "justMyCode": true
+      }
+    ]
   }
 }
