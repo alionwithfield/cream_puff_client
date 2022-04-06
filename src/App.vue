@@ -2,11 +2,13 @@
 import { RouterView } from 'vue-router';
 import { defineComponent } from 'vue';
 import NavbarTop from './components/NavbarTop.vue';
+import FooterHome from './components/FooterHome.vue';
 
 export default defineComponent({
   components: {
-    NavbarTop,
     RouterView,
+    NavbarTop,
+    FooterHome,
   },
   setup(components) {
     return {
@@ -22,6 +24,7 @@ export default defineComponent({
   </header>
 
   <RouterView />
+  <FooterHome />
 </template>
 
 <style>
@@ -44,14 +47,13 @@ a,
 }
 
 @media (hover: hover) {
-  a:hover {
+  /* a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
-  }
+  } */
 }
 
 nav {
   width: 100%;
-  font-size: 12px;
   text-align: center;
 }
 
@@ -66,10 +68,6 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-}
-
-nav a:first-of-type {
-  border: 0;
 }
 
 @media (min-width: 1024px) {
@@ -96,10 +94,8 @@ nav a:first-of-type {
 
   nav {
     text-align: left;
-
-    font-size: 1rem;
-
-    padding: 1rem 0;
+    font-size: 16px;
+    padding: 8px 0;
   }
 }
 </style>

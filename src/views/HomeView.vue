@@ -13,6 +13,7 @@ import HeroHome from '../components/HeroHome.vue';
 export default defineComponent({
   components: {
     FeaturesSection,
+
     HeroHome,
   },
   setup(components) {

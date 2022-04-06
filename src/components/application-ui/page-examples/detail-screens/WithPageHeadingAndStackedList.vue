@@ -1,28 +1,4 @@
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <template>
-  <!--
-    This example requires updating your template:
-
-    ```
-    <html class="h-full bg-white">
-    <body class="h-full">
-    ```
-  -->
   <div class="min-h-full">
     <!-- Navbar -->
     <Disclosure as="nav" class="bg-gray-50" v-slot="{ open }">
@@ -629,8 +605,10 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { ref } from 'vue';
+import { defineComponent } from 'vue';
+
 import {
   Disclosure,
   DisclosureButton,
@@ -712,7 +690,7 @@ const publishingOptions = [
   },
 ];
 
-export default {
+export default defineComponent({
   components: {
     Disclosure,
     DisclosureButton,
@@ -757,5 +735,5 @@ export default {
       selected,
     };
   },
-};
+});
 </script>
